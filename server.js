@@ -10,51 +10,55 @@ var articleOne = {
   heading : "India wins five medals in Winter Olampic!",
   date : "5th of Oct 2016",
   content : `
-            <p>
                 There is nothing like a fauliure. India proved it !
-            </p>
             `
 };
-
-var articleOneTemplate = `
-            <html>
-                    <head>
-                        <title>${title}</title>
-                       <link href="/ui/style.css" rel="stylesheet" />
-                    </head>
-                
-                <body>
-                    <div class="container">
-                        <div>
-                            <h1>
-                                ${heading}
-                            </h1>    
-                        </div>      
-                        <hr>
-                        <div>
-                            <h3>
-                                ${date}
-                            </h3>    
-                        </div>
-                        <div>
-                            <a href="/">Home</a>
-                            <p>
-                                ${content}
-                            </p>
-                        </div>
-                    </div>    
-                </body>    
-            </html>
-
-
-`;
+function createTemplate(data){
+    title = data.title;
+    heading = data.heading;
+    date = data.date;
+    content = data.content;
+    
+    var articleOneTemplate = `
+                <html>
+                        <head>
+                            <title>${title}</title>
+                           <link href="/ui/style.css" rel="stylesheet" />
+                        </head>
+                    
+                    <body>
+                        <div class="container">
+                            <div>
+                                <h1>
+                                    ${heading}
+                                </h1>    
+                            </div>      
+                            <hr>
+                            <div>
+                                <h3>
+                                    ${date}
+                                </h3>    
+                            </div>
+                            <div>
+                                <a href="/">Home</a>
+                                <p>
+                                    ${content}
+                                </p>
+                            </div>
+                        </div>    
+                    </body>    
+                </html>
+        `;
+        
+        return articleOneTemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two',function(req,res){
