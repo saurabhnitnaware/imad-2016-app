@@ -10,5 +10,5 @@ function moveRight(){
 }
 
 bro.onclick = function(){
-  var interval = setInterval(moveRight,200);
+  var interval = setInterval(moveRight,500);
 };
