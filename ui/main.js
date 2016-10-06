@@ -4,6 +4,11 @@ alert('Loaded!');
 
 var bro = document.getElementById('bro');
 
+function moveRight(){
+    marginLeft += 10;
+    bro.style.marginLeft = marginLeft + 'px';
+}
+
 bro.onclick = function(){
-  bro.style.marginLeft = '200px';  
+  var interval = setInterval(moveRight,200);
 };
