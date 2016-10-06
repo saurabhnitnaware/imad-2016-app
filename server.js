@@ -5,14 +5,19 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-  title : "Article-One|Saurabh",
-  heading : "India wins five medals in Winter Olampic!",
-  date : "5th of Oct 2016",
-  content : `
+var articles ={
+    articleOne = {
+    title : "Article-One|Saurabh",
+    heading : "India wins five medals in Winter Olampic!",
+    date : "5th of Oct 2016",
+    content : `
                 There is nothing like a fauliure. India proved it !
-            `
+                `
+        },
+    articleTwo = {},
+    articleThree = {}`    
 };
+
 function createTemplate(data){
     title = data.title;
     heading = data.heading;
