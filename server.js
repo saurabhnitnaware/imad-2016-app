@@ -12,7 +12,7 @@ var articles ={
     date : "5th of Oct 2016",
     content : `
                 There is nothing like a fauliure. India proved it !
-                `
+            `
         },
     articleTwo = {},
     articleThree = {}`    
@@ -24,7 +24,8 @@ function createTemplate(data){
     date = data.date;
     content = data.content;
     
-    var articleOneTemplate = `
+    var articleOneTemplate = 
+            `
                 <html>
                         <head>
                             <title>${title}</title>
