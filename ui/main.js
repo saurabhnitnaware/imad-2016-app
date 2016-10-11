@@ -12,13 +12,13 @@ function moveRight(){
 bro.onclick = function(){
   var interval = setInterval(moveRight,70);
 };
-
+// incrementing counter by button
 var counter = 0;
-var button = document.getElementById('but');
+var button = document.getElementById("but");
 button.onclick = function(){
   
   
   counter = counter + 1;
-  var span = document.getElementById('count');
+  var span = document.getElementById("count");
   span.innerHTML = counter.toString();
 };
