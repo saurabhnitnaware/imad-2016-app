@@ -13,7 +13,7 @@ bro.onclick = function(){
   var interval = setInterval(moveRight,70);
 };
 // incrementing counter by button
-    var counter = 0;
+    
     var button = document.getElementById("but");
     button.onclick = function(){
       
