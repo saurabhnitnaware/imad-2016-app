@@ -44,9 +44,9 @@ button.onclick = function(){
 // 
 var InputName = document.getElementById('name');
 var nameF = InputName.value;
-var but = document.getElementById('submit');
+var but = document.getElementById('submitBtn');
 
-submit.onclick = function(){
+but.onclick = function(){
   var names = ["Saurabh","Rahul","Sammer"];
   var list = '';
   for(var i=0;i<names.length;i++)
