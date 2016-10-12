@@ -17,7 +17,7 @@ bro.onclick = function(){
 //var counter = 0;    
 var button = document.getElementById("but");
 button.onclick = function(){
-      
+      /*
       var request = new XMLHttpRequest();
       
       request.onreadystatechange = function(){
@@ -31,14 +31,14 @@ button.onclick = function(){
             }
         }
     };
-  
- /* counter = counter + 1;
+    */
+  counter = counter + 1;
   var span = document.getElementById("count");
   span.innerHTML = counter.toString();
- */ 
   
-  request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/counter',true);
-  request.send(null);
+  
+ // request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/counter',true);
+ // request.send(null);
 };
 
 // 
