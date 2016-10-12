@@ -14,7 +14,7 @@ bro.onclick = function(){
 };
 
 // incrementing counter by button
-//var counter = 0;    
+var counter = 0;    
 var button = document.getElementById("but");
 button.onclick = function(){
       /*
