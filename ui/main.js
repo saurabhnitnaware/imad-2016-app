@@ -49,7 +49,7 @@ var but = document.getElementById('submitBtn');
 but.onclick = function(){
   var names = ["Saurabh","Rahul","Sammer"];
   var list = '';
-  for(var i=0;i<=names.length;i++)
+  for(var i=0;i<names.length;i++)
   {
       list += '<li>'+names[i]+'</li>';
   }
