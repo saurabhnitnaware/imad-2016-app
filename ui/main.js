@@ -69,8 +69,8 @@ but.onclick = function(){
 
 var InputName = document.getElementById('name');
 var nameF = InputName.value;
- request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/submit-name?name=' + nameF,true);
- request.send(null);
+request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/submit-name?name=' + nameF,true);
+request.send(null);
   
 };
 
