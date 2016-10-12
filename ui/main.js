@@ -49,14 +49,13 @@ var but = document.getElementById('submitBtn');
 but.onclick = function(){
   var names = ["Saurabh","Rahul","Sammer"];
   var list = '';
-  var ul = document.getElementById('uo');
   for(var i=0;i<=names.length;i++)
   {
       list = '<li>'+names[i]+'</li>';
-
- 
-  ul.innerHTML = list;
   }
+  var ul = document.getElementById('uo');
+  ul.innerHTML = list;
+  
 };
 
 
