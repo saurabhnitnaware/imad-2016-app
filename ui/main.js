@@ -42,6 +42,25 @@ button.onclick = function(){
 };
 
 // 
+var InputName = document.getElementById('name');
+var nameF = InputName.value;
+var but = document.getElementById('submit');
+
+submit.onclick = function(){
+  var names = ["Saurabh","Rahul","Sammer"];
+  var list = '';
+  for(var i=0;i<names.length;i++)
+  {
+      list = '<li>'+names[i]+'</li>';
+  }
+  var ul = document.getElementById('uo');
+  ul.innerHTML = list;
+};
+
+
+
+
+
 
 
 
