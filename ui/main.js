@@ -13,11 +13,11 @@ bro.onclick = function(){
   var interval = setInterval(moveRight,70);
 };
 // incrementing counter by button
-    
-    var button = document.getElementById("but");
-    button.onclick = function(){
+var counter = 0;    
+var button = document.getElementById("but");
+button.onclick = function(){
       
-      var request = new XMLHttpRequest();
+      /*var request = new XMLHttpRequest();
       
       request.onreadystatechange = function(){
         if(request.readyState == XMLHttpRequest.DONE)
@@ -29,13 +29,13 @@ bro.onclick = function(){
                 span.innerHTML = counter.toString();
             }
         }
-    };
+    };*/
   
-  /*counter = counter + 1;
+  counter = counter + 1;
   var span = document.getElementById("count");
   span.innerHTML = counter.toString();
-  */
   
-  request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/counter',true);
-  request.send(null);
+  
+ // request.open('GET','http://saurabhnitnaware.imad.hasura-app.io/counter',true);
+  //request.send(null);
 };
