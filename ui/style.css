@@ -14,7 +14,7 @@ body {
 }
 
 body.grid {
-  background-image: url(../images/grid.png);
+  background-image: url(images/grid.png);
 }
 
 h1 {
@@ -63,7 +63,7 @@ a:link:hover, a:visited:hover {
 
 #header {
   height: 50px;
-  background-image: url(../images/header.png);
+  background-image: url(images/header.png);
   line-height: 38px;
   position: fixed;
   top: 0;
@@ -90,7 +90,7 @@ a:link:hover, a:visited:hover {
   line-height: 24px;
   font-size: 12px;
   font-style: italic;
-  background: url(../images/header-right.png) right 0;
+  background: url(images/header-right.png) right 0;
   float: left;
   color: #848484;
   -webkit-transition: opacity 0.2s linear;
@@ -106,7 +106,7 @@ a:link:hover, a:visited:hover {
   display: block;
   height: 26px;
   float: left;
-  background: url(../images/header-left.png) no-repeat;
+  background: url(images/header-left.png) no-repeat;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -121,7 +121,7 @@ a:link:hover, a:visited:hover {
   width: 950px;
   padding: 80px 0 59px;
   margin: 0 auto;
-  background: url(../images/line.png) repeat-x 0 bottom;
+  background: url(images/line.png) repeat-x 0 bottom;
   overflow: hidden;
 }
 
@@ -195,7 +195,7 @@ a:link:hover, a:visited:hover {
   width: 950px;
   margin: 0 auto;
   padding: 20px 0;
-  background: url(../images/line.png) repeat-x 0 bottom;
+  background: url(images/line.png) repeat-x 0 bottom;
   overflow: hidden;
 }
 
@@ -234,7 +234,7 @@ a:link:hover, a:visited:hover {
   margin-bottom: 9px;
   position: relative;
   padding-bottom: 5px;
-  background: url(../images/separator.png) no-repeat 0 bottom;
+  background: url(images/separator.png) no-repeat 0 bottom;
 }
 
 .section .description {
